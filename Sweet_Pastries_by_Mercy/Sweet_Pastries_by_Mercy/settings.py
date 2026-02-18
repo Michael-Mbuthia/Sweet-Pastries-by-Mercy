@@ -79,9 +79,13 @@ WSGI_APPLICATION = 'Sweet_Pastries_by_Mercy.wsgi.application'
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "bakery_db",
+        "USER": "postgres",
+        "PASSWORD": "mikemike1",
+        "HOST": "localhost",
+        "PORT": "5432",
     }
 }
 
